@@ -52,5 +52,18 @@ namespace TestProject
             Assert.AreEqual('B', letter);
         }
 
+        [TestMethod]
+        public void Score5To7_Letterc()
+        {
+
+            Student s = new Student();
+
+            s.Score = 5;
+
+            char letter = s.getLetterScore();
+
+            Assert.AreEqual('C', letter);
+        }
+
     }
 }
